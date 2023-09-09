@@ -32,8 +32,8 @@ const CheckoutList = ({ cartItem, clearItem, addItems, reduceItems })=>{
 
 const mapDispatchToProps = (dispatch) =>({
     clearItem: item=> dispatch(removeItems(item)),
-    addItems: item=> dispatch( addItems( item)),
-    reduceItems: item=> dispatch(reduceItems( item)),
+    addItems: item=> dispatch( addItems(item)),
+    reduceItems: item=> dispatch(reduceItems(item)),
 })
 
 export default connect(null, mapDispatchToProps) (CheckoutList);
